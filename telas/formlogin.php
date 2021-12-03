@@ -40,7 +40,11 @@
                         <a href="novoUser.php">
                          Cadastre-se
                         </a>
+                        <a class="text-center mt-2" style="text-decoration: none; color: #808080" href="../telas/index.php">
+                        <spam> Continue como visitante </spam>
                         </span>
+
+          
                 </div>
             </div>
             
