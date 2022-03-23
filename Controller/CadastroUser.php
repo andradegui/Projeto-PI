@@ -7,7 +7,6 @@ error_reporting(E_ALL);
 // require_once('sessao/controle.php');
 require_once('../banco/conecta.php');
 
-
 $nome = $_POST['nome'] ?? false;
 $sobrenome = $_POST['sobrenome'];
 $email = $_POST['email'];
