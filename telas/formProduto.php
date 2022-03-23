@@ -12,7 +12,7 @@ include 'header.php';
 
     <h2> Novo Produto </h2>
 
-    <form class="needs-validation" novalidate method="post" action="../produto/novoProduto.php" enctype="multipart/form-data">
+    <form class="needs-validation" novalidate method="post" action="../produto/cadastroProduto.php" enctype="multipart/form-data">
 
       <section class="mb-3 ">
         <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo Produto" required value="<?php echo $produto['titulo'] ?? ''; ?>">

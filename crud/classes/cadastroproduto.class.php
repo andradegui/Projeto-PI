@@ -9,19 +9,20 @@ class cadastroproduto {
         $this->bd = $bd;
     }
 
-    function listar($id=null){
-
-        $id = preg_replace( '/\D/', '', $id);
+    
+    function listar($id = ''){
+   
+        $id = preg_replace( '/\D/', '', $id ?? "");
 
         $strSql = !empty($id) ? "WHERE id = $id " : '';
 
         $sql = 'SELECT id, titulo, categoria, preco, modelo, marca, descricao, imagem 
                 FROM produto '.$strSql.' ORDER BY id';
-        
+
         foreach ($this->bd->query($sql) as $registro) {
 
-            $lista[$registro['id']] = $registro;  
-            
+            $lista[$registro['id']] = $registro;
+
         }
         if (isset($lista)){
         return $lista;
@@ -42,5 +43,4 @@ class cadastroproduto {
 
        }
     }
-
 }

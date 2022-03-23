@@ -12,44 +12,6 @@ include '../telas/navbar.php';
 
 <main class="">
 
-        <!-- CARROuSSEL
-    <section class="pt-2 container">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item text-center active" data-bs-interval="5000">
-                    <img src="../imagens/carrosel-2.png" class="" alt="...">
-                </div>
-
-                <div class="carousel-item text-center" data-bs-interval="5000">
-                    <img src="../imagens/carrosel-2.png" class="" alt="...">
-
-                </div>
-
-                <div class="carousel-item text-center">
-                    <img src="../imagens/carrosel-2.png" class="" alt="...">
-                    <div class="carousel-caption d-none d-md-block"> </div>
-                </div>
-
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section> -->
-
     <div class="text-center d-flex align-items-center justify-content-center" style="background-color: #DCDCDC; height:80px;"> 
         <h3 class=" text-uppercase font-weight-ligth" style="color: Rgb(20, 124, 162); font-weight: lighter"> Catálogo </h3>
     </div>
