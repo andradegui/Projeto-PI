@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -14,7 +14,7 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 $confirma = $_POST['confirma'];
 
-if(!($senha == $confirma)){
+if (!($senha == $confirma)) {
     echo " As senhas não confere";
     die();
 }
@@ -22,26 +22,23 @@ if(!($senha == $confirma)){
 $senha = password_hash($senha, PASSWORD_DEFAULT);
 
 
-if ($nome && $sobrenome && $email && $senha){
+if ($nome && $sobrenome && $email && $senha) {
 
     $stmt = $bd->prepare('INSERT INTO login_user (nome, sobrenome, email, senha ) VALUES (:nome, :sobrenome, :email, :senha )');
 
-    if ( $stmt->execute([':nome' => $nome,
-                        ':sobrenome' => $sobrenome,  
-                        ':email' => $email,
-                        ':senha' => $senha]) 
-    
-        ) {
+    if ($stmt->execute([
+        ':nome' => $nome,
+        ':sobrenome' => $sobrenome,
+        ':email' => $email,
+        ':senha' => $senha
+    ])) {
 
-            header('Location: ../telas/formlogin.php');       
-
-    } else { 
+        header('Location: ../telas/formlogin.php');
+    } else {
         echo '<pre>';
         var_dump($stmt->errorInfo());
-            echo "Erro ao tentar gravar!";
+        echo "Erro ao tentar gravar!";
     }
-}   else {
+} else {
     echo 'Preencha todos os campos';
 }
-
-

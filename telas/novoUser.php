@@ -11,7 +11,7 @@ include '../telas/header.php';
 
         <h2> Novo Usuário </h2>
 
-          <form method="post" action="../novoUser/CadastroUser.php">
+          <form method="post" action="../novoUser/classCadastroUser.php">
 
             <div class="input-field">
               <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
