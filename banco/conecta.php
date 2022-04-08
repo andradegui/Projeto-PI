@@ -14,4 +14,4 @@ class BD extends PDO
     }
 }
 
-$bd = new PDO($bd_dsn, $bd_user, $bd_pass);
+$bd = new BD($bd_dsn, $bd_user, $bd_pass);
